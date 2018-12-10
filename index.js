@@ -1,6 +1,7 @@
 const phantom = require('phantom');
 const fs = require('fs');
 const nodemailer = require('nodemailer');
+const request = require('request');
  
 async function checkDomain(domain) {
     const instance = await phantom.create();
@@ -15,7 +16,8 @@ async function checkDomain(domain) {
         if (content.indexOf(`${domain} on juba registreeritud.`) !== -1) {
             console.log('not yet free');
         } else {
-            sendMail(`domain ${domain} is avaialble, get it now quick`, domain);
+            // sendMail(`domain ${domain} is avaialble, get it now quick`, domain);
+            sendTelegramMessage(`domain ${domain} is avaialble, get it now quick`);
             console.log('available');
         }
         fs.writeFile('resp.html', content, function (err) {
@@ -29,7 +31,13 @@ async function checkDomain(domain) {
 //   console.log(content);
 };
 
-
+function sendTelegramMessage(text) {
+    request
+    .get(`https://api.telegram.org/bot614305519:AAGPtbwfS6ZWav5qqMAvjNVpoCqa4DWmeYM/sendMessage?chat_id=553999286&text="${text}"`)
+    .on('response', function(response) {
+        console.log(response);
+    })
+}
 
 function sendMail(text, domain) {
     var transporter = nodemailer.createTransport({
@@ -61,5 +69,5 @@ function getRandomInt(min, max) {
   }
 
 setInterval(() => {
-    checkDomain('soome100.ee');
+    checkDomain('softedo.ee');
 }, (1000 * 60 * 5) + (getRandomInt(5, 55) * 1000));
