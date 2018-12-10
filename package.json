@@ -1,0 +1,24 @@
+{
+  "name": "domainlookup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreisbitnev47/domainLookup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreisbitnev47/domainLookup/issues"
+  },
+  "homepage": "https://github.com/andreisbitnev47/domainLookup#readme",
+  "dependencies": {
+    "nodemailer": "^4.7.0",
+    "phantom": "^6.0.3",
+    "request": "^2.88.0"
+  }
+}

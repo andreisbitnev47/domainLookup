@@ -1,0 +1,725 @@
+<!DOCTYPE html><!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]--><!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]--><!--[if !IE]><!--><html lang="en" class="no-js"><!--<![endif]--><!-- BEGIN HEAD --><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+        <meta charset="utf-8">
+
+        <meta name="csrf-token" content="umRqMlweV2bOqI58XaHLN7TWgsvzMcaDZMUx4ZLf">
+        <meta name="trans-source" content="/assets/lang/et_EE.json?id=8d997b548c92a6d11e66">
+        <meta http-equiv="content-language" content="et">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+
+        <meta content="Zone Media LLC" name="author">
+
+        
+        <title>zone.ee</title>
+<meta property="og:title" content="zone.ee">
+
+
+
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/global/plugins/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/global/plugins/simple-line-icons/simple-line-icons.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/global/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/global/plugins/uniform/css/uniform.default.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/global/plugins/bootstrap-toastr/toastr.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/global/css/components.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/global/css/plugins.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/layouts/layout/css/layout.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/layouts/layout/css/themes/default.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/layouts/layout/css/custom.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/pages/css/portfolio.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/theme/assets/global/plugins/cubeportfolio/css/cubeportfolio.css">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/assets/css/main.css?id=17492c51686322086cc2">
+<link rel="stylesheet" type="text/css" href="https://www.zone.ee/assets/css/domainorder.css?id=aa51646cfac4a482ce12">
+<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <!--Don't allow to display this page in iframe-->
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script><script async="" charset="utf-8" src="//v2.zopim.com/?3bZ6osF4bRgBdlcQAGYfLvlPc24seTeA" type="text/javascript"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-K8W4S8"></script><script type="text/javascript">
+            if (window.location != window.parent.location) {
+                window.parent.location = window.location;
+            }
+        </script>
+
+        <script>
+    window.dataLayer = window.dataLayer || [];
+    </script>
+
+    
+
+    
+                    <style>
+            @media (min-width: 992px) {
+                .page-content-wrapper .page-content {
+                    margin-left: 0px !important;
+                }
+            }
+            </style>
+        
+                                <!-- Google Tag Manager -->
+        <noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-K8W4S8";
+        height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+        <!-- End Google Tag Manager -->
+                <style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">.zopim { display: none !important }</style></head>
+
+
+    <!-- BEGIN BODY -->
+    <body class="page-header-fixed page-quick-sidebar-over-content page-sidebar-fixed " data-zcsrf="">
+
+                                <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K8W4S8');</script>
+        <!-- End Google Tag Manager -->
+            
+        <!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+    <!-- BEGIN TOP NAVIGATION BAR -->
+    <div class="page-header-inner">
+
+        <div class="page-logo">
+    <a class="navbar-brand" href="/">
+        <img src="https://www.zone.ee/build/assets/img/logo-red@2x.png" width="106" height="24" alt="logo" class="logo-default">
+    </a> 
+</div>
+        <!--<a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <img src="https://www.zone.ee/js/zwebadmin/zone/img/menu-toggler.png" alt=""/>
+        </a>-->
+        <!-- END RESPONSIVE MENU TOGGLER -->
+
+        <!-- BEGIN TOP NAVIGATION MENU -->
+        <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+                
+                <li class="dropdown dropdown-user hidden-xs"> 
+    <a href="https://webmail.zone.ee" class="dropdown-toggle" target="_blank"> 
+        <i class="fa fa-envelope"></i>
+    </a>
+</li>
+
+<li class="dropdown dropdown-user hidden-xs"> 
+    <a href="https://zonecloud.ee" class="dropdown-toggle" target="_blank"> 
+        <i class="fa fa-cloud"></i>
+    </a>
+</li>
+
+<li class="dropdown dropdown-user hidden-xs"> 
+    <a href="https://help.zone.eu" class="dropdown-toggle" target="_blank"> 
+        <i class="fa fa-question"></i>
+    </a>
+</li>
+                <!-- BEGIN USER LOGIN DROPDOWN -->
+<li class="dropdown dropdown-user dropdown-user-menu">
+
+            <a class="dropdown-toggle" href="https://www.zone.ee/et/zid/server/auth?ZID_CPROXY=https%3A%2F%2Fwww.zone.ee%2Fet%2Fzid%2Fconsumer&amp;ZID_SIG=Vi47NqN%2BxLYmaur7mR4TcRZrlDJ4NpswPbg6YOZsFy%2BAAAc7G%2BnaFKWRqNwqnam4%2F6kuE%2BWEc%2FAcJ%2FxlSffQslfyPpKKVM80pnrru1Td829lv5kzXAOexVRG%2FmJeqbIWS16yvMZn6XWWXTx2eOkG%2FrtBQShRAYYkgDhZo%2B3FY3c%3D&amp;ZID_CONTINUE=https%3A%2F%2Fwww.zone.ee%2Fet%2Fdomeeni-otsing" open-modal-iframe="" iframe-size="lg">
+            <i class="fa fa-user visible-xs hidden-sm"></i>
+            <span class="username hidden-xs"> Logi sisse
+                <i class="fa fa-user"></i>
+            </span>
+        </a>
+    </li>
+<!-- END USER LOGIN DROPDOWN -->
+                <li class="dropdown dropdown-language ng-scope" ng-controller="langController">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+    <img alt="" src="https://www.zone.ee/theme/assets/global/img/flags/ee.png">
+
+    <i class="fa fa-angle-down hidden-xs hidden-md"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-default">
+        <li>
+            <a href="/et/domeeni-otsing#/preview/soome100.ee">
+            <img alt="" src="https://www.zone.ee/theme/assets/global/img/flags/ee.png"> Eesti </a>
+        </li>
+        <li>
+            <a href="/ru/poisk-domena#/preview/soome100.ee">
+            <img alt="" src="https://www.zone.ee/theme/assets/global/img/flags/ru.png"> Pусский </a>
+        </li>
+        <li>
+            <a href="/en/domain-search#/preview/soome100.ee">
+            <img alt="" src="https://www.zone.ee/theme/assets/global/img/flags/en.png"> English </a>
+        </li>
+    </ul>
+</li>
+                <li class="dropdown">
+                    <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- END TOP NAVIGATION MENU -->
+    </div>
+    <!-- END TOP NAVIGATION BAR -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+
+            
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <div class="page-content">
+
+                        <div class="container-fluid domainorder-container ng-scope" ng-controller="introCtrl as $main" ng-init="$main.infoTexts=&quot;&lt;div class=\&quot;row zone__slogan\&quot;&gt;\r\n\r\n\t&lt;div class=\&quot;col-md-12\&quot;&gt;\r\n\t\t&lt;h1&gt;Domeeni registreerimine&lt;\/h1&gt;\r\n\t\t&lt;h4&gt;Domeeni otsing aitab leida vaba internetiaadressi \u2013 meie valikus on .ee, .eu, .com,&lt;br&gt;enamus Euroopa riike ja uued tippdomeenid, kokku \u00fcle 360 v\u00f5imaluse&lt;\/h4&gt;\r\n\r\n\t&lt;\/div&gt;\r\n\r\n&lt;\/div&gt;\r\n\r\n&lt;div class=\&quot;row zone__featured\&quot;&gt;\r\n\t&lt;div class=\&quot;col-md-4 bg-default-zone zone__featured_item\&quot;&gt;\r\n\t\t&lt;h4 class=\&quot;zone-featured-kast\&quot;&gt;Maatunnusega domeenid&lt;\/h4&gt;\r\n\t\t&lt;div class=\&quot;text-center margin-bottom-20\&quot;&gt;\r\n\t\t\t&lt;img src=\&quot;https:\/\/www.zone.ee\/static\/sites\/3\/2018\/01\/arr.png\&quot; width=\&quot;55\&quot; height=\&quot;26\&quot; alt=\&quot;\&quot;&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;zone-small-text\&quot;&gt;\r\n\t\t\t&lt;strong&gt;M\u00f5tle suurelt: .ee on koduturg &lt;\/strong&gt;, mujal on ennast lihtsam tutvustada .eu ettev\u00f5tjana v\u00f5i n\u00e4idata hoolivust kohalikest tavadest valides riigi domeeni: .at (Austria), .be (Belgia), .by (Valgevene), .ch (Sveitsi), cz (Tsehhi), .de (Saksa), .dk (Taani), .fi (Soome), .fr (Prantsusmaa), .hr (Horvaatia), .is (Islandi), .li (Lichtensteini), .lt (Leedu), .lu (Luxemburi), .lv (L\u00e4ti), .nl (Hollandi), .pl (Poola), .pt (Portugali), .ro (Rumeenia), .se (Rootsi), .si (Sloveenia), .co.uk (Suurbritannia)\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n\t&lt;div class=\&quot;col-md-4 bg-default-zone zone__featured_item\&quot;&gt;\r\n\t\t&lt;h4 class=\&quot;zone-featured-kast\&quot;&gt;Populaarsed domeenid&lt;\/h4&gt;\r\n\t\t&lt;div class=\&quot;text-center margin-bottom-20\&quot;&gt;\r\n\t\t\t&lt;img src=\&quot;https:\/\/www.zone.ee\/static\/sites\/3\/2018\/01\/arr.png\&quot; width=\&quot;55\&quot; height=\&quot;26\&quot; alt=\&quot;\&quot;&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;zone-small-text\&quot;&gt;Neist sai k\u00f5ik alguse \u2013 ja kuigi vaba domeeninime on t\u00e4na raske leida, tasuks rahvusvahelise nime valikul kindlasti ka neid kaaluda:\r\n\t\t\t&lt;h2&gt;&lt;strong&gt;.com, .net, .org &lt;\/strong&gt;&lt;\/h2&gt;\r\n\t\t\t&lt;p&gt;Lisaks leiab meilt .me, .mobi, .info, .biz, .tv ning nimel\u00f5ppudeks sobivad mikroriikide domeenid .ac, .cc, .io, .vg, .sh &lt;\/p&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n\t&lt;div class=\&quot;col-md-4 bg-default-zone zone__featured_item\&quot;&gt;\r\n\t\t&lt;h4 class=\&quot;zone-featured-kast\&quot;&gt;Uued tippdomeenid&lt;\/h4&gt;\r\n\t\t&lt;div class=\&quot;text-center margin-bottom-20\&quot;&gt;\r\n\t\t\t&lt;img src=\&quot;https:\/\/www.zone.ee\/static\/sites\/3\/2018\/01\/arr.png\&quot; width=\&quot;55\&quot; height=\&quot;26\&quot; alt=\&quot;\&quot;&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;zone-small-text\&quot;&gt;Piirideta internetti sobivad h\u00e4sti domeeninimed, mis r\u00e4\u00e4givad rohkem sellest mida sa teed kui sellest, kus v\u00f5i kellele seda m\u00fc\u00fca soovid. Teemadomeenide otsingus n\u00e4eb sageli katsetusi, mis algavad tegevusele viitava .agency, .apartments v\u00f5i .beer\u2019iga ja j\u00f5uavad v\u00e4lja .pink v\u00f5i .ninja\u2019ni.&lt;\/div&gt;\r\n\t\t&lt;br&gt;\r\n\t\t&lt;br&gt;\r\n\t\t&lt;a href=\&quot;https:\/\/www.zone.ee\/et\/domeeni-registreerimine\/hinnad\/\&quot; class=\&quot;btn blue btn-outline\&quot;&gt;&lt;i class=\&quot;fa fa-search\&quot;&gt;&lt;\/i&gt; Vaata k\u00f5iki domeene ja hindu&lt;\/a&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/div&gt;&quot;; $main.autoloadCount='5'; $main.preload='true'; $main.defaultTld = &quot;ee&quot;">
+
+        <!-- ngView: --><ng-view class="ng-scope"><progress-bar step="preview" class="ng-scope ng-isolate-scope"><div class="portlet-body">
+    <div class="mt-element-step margin-bottom-40 hidden-md hidden-sm hidden-xs">
+        <!-- BEGIN progressbar for order without .ee domain  -->
+        <!-- ngIf: !$ctrl.signingRequired --><div class="row step-no-background-thin ng-scope" ng-if="!$ctrl.signingRequired">
+            <div class="col-sm-4 col-lg-4 mt-step-col active" ng-class="{active: $ctrl.step =='preview', done: $ctrl.step =='overview' || $ctrl.step =='sign' || $ctrl.step =='pay'}">
+                <div class="mt-step-number first bg-white font-grey">1</div>
+                <div class="mt-step-title uppercase font-grey-cascade">Otsi</div>
+                <div class="mt-step-content font-grey-cascade">Leia sobivad domeeninimed</div>
+            </div>
+            <div class="col-sm-4 col-lg-4 mt-step-col" ng-class="{active: $ctrl.step =='overview', done: $ctrl.step =='sign' || $ctrl.step =='pay'}">
+                <div class="mt-step-number bg-white font-grey">2</div>
+                <div class="mt-step-title uppercase font-grey-cascade">Kontaktandmed</div>
+                <div class="mt-step-content font-grey-cascade">Sisesta või kontrolli üle kontaktandmed</div>
+            </div>
+            <div class="col-sm-4 col-lg-4 mt-step-col" ng-class="{active: $ctrl.step =='pay'}">
+                <div class="mt-step-number bg-white font-grey">3</div>
+                <div class="mt-step-title uppercase font-grey-cascade">Maksa</div>
+                <div class="mt-step-content font-grey-cascade">... ja hakka kasutama!</div>
+            </div>
+        </div><!-- end ngIf: !$ctrl.signingRequired -->
+        <!-- END progressbar for order without .ee domain  -->
+
+        <!-- BEGIN progressbar for order containing .ee domain  -->
+        <!-- ngIf: $ctrl.signingRequired -->
+        <!-- END progressbar for order containing .ee domain  -->
+    </div>
+</div></progress-bar>
+<searchbar tld="ee" class="ng-scope ng-isolate-scope"><div class="clearfix portlet zoneportlet2">
+    <form ng-submit="$ctrl.submit()" class="ng-pristine ng-valid">
+        <div class="domeenidropdown clearfix padding20">
+
+            <div class="col-md-7 col-xs-7 padding-rl-0">
+                <input type="" class="form-control input-lg ng-pristine ng-untouched ng-valid ng-not-empty" id="domeen" placeholder="Sisesta domeen" name="domain-search-input" ng-model="$ctrl.adomain">
+            </div>
+
+            <div class="col-md-3 col-xs-3 padding-rl-0 ">
+
+                <div class="ui-select-container ui-select-bootstrap dropdown ng-not-empty ng-valid" ng-class="{open: $select.open}" ng-model="$ctrl.selectedExtension"><div class="ui-select-match ng-scope" ng-hide="$select.open &amp;&amp; $select.searchEnabled" ng-disabled="$select.disabled" ng-class="{'btn-default-focus':$select.focus}"><span tabindex="-1" class="btn btn-default form-control ui-select-toggle" aria-label="Select box activate" ng-disabled="$select.disabled" ng-click="$select.activate()" style="outline: 0;"><span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted ng-binding ng-hide"></span> <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{'ui-select-allow-clear': $select.allowClear &amp;&amp; !$select.isEmpty()}" ng-transclude="">
+                        <span ng-bind="$select.selected.name" class="ng-binding ng-scope">.ee</span><small class="muted text-muted ng-binding ng-scope" style="margin-left: 10px;">8.37 € + km</small>
+                    </span> <i class="caret pull-right" ng-click="$select.toggle($event)"></i> <a ng-show="$select.allowClear &amp;&amp; !$select.isEmpty() &amp;&amp; ($select.disabled !== true)" aria-label="Select box clear" style="margin-right: 10px" ng-click="$select.clear($event)" class="btn btn-xs btn-link pull-right ng-hide"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></a></span></div><span ng-show="$select.open &amp;&amp; $select.refreshing &amp;&amp; $select.spinnerEnabled" class="ui-select-refreshing glyphicon glyphicon-refresh ui-select-spin ng-hide"></span> <input type="search" autocomplete="off" tabindex="-1" aria-expanded="true" aria-label="Select box" aria-owns="ui-select-choices-0" class="form-control ui-select-search ng-pristine ng-untouched ng-valid ng-empty ng-hide" ng-class="{ 'ui-select-search-hidden' : !$select.searchEnabled }" placeholder="" ng-model="$select.search" ng-show="$select.open"><ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-scope ng-hide" ng-show="$select.open &amp;&amp; $select.items.length &gt; 0" repeat="item in ($ctrl.extensionOptions | filter: $select.search) track by item.id"><li class="ui-select-choices-group" id="ui-select-choices-0"><div class="divider ng-hide" ng-show="$select.isGrouped &amp;&amp; $index &gt; 0"></div><div ng-show="$select.isGrouped" class="ui-select-choices-group-label dropdown-header ng-binding ng-hide" ng-bind="$group.name"></div><!-- ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items track by item.id --></li></ul><div class="ui-select-no-choice"></div><ui-select-single></ui-select-single><input ng-disabled="$select.disabled" class="ui-select-focusser ui-select-offscreen ng-scope" type="text" id="{{ $select.focusserId }}" aria-label="{{ $select.focusserTitle }}" aria-haspopup="true" role="button"></div>
+            </div>
+
+            <div ng-class="$ctrl.orderCount &gt; 0 ? 'col-md-1 col-xs-1 padding-rl-0' : 'col-md-2 col-xs-2 padding-rl-0'" class="col-md-2 col-xs-2 padding-rl-0">
+                <button class="btn blue btn-block btn-lg" type="submit" name="domain-search-submit">
+                    <span class="hidden-sm hidden-xs">Otsi</span>
+                    <span class="visible-sm visible-xs">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </span>
+                </button>
+            </div>
+            <!-- ngIf: $ctrl.orderCount > 0 -->
+        </div>
+    </form>
+</div></searchbar>
+<div class="row domeenitellimine preview ng-scope">
+    <div class="col-md-9">
+        <preview-domain class="ng-isolate-scope"><div class="portlet zoneportlet padding50">
+    <!-- DOMAIN LOADING BEGIN -->
+    <div>
+        <div class="row ng-hide" ng-hide="$ctrl.adomain">
+            <div class="col-md-8">
+                <span class="page-title font-blue-dark ng-binding">soome100.ee</span>
+            </div>
+            <div class="col-md-4">
+                <span class=" pull-right"><i class="fa fa-2x fa-spinner fa-spin"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 ng-class="'page-title ' + $ctrl.domainStatus.class" class="ng-binding page-title font-red-mint">
+                <!-- ngIf: $ctrl.status == 'ERROR' -->
+                soome100.ee on juba registreeritud.
+            </h3>
+            <!-- ngIf: $ctrl.status == 'REGISTERED' && !$ctrl.domainStatus['status'].transfer_allowed && !$ctrl.domainStatus['status'].is_our -->
+
+
+            <!-- ngIf: $ctrl.domainStatus['status'].trade_prohibited_help -->
+    </div>
+
+    <div class="dashed">
+        <!-- ngIf: ['REGISTERED', 'FREE', 'PREMIUM'].indexOf($ctrl.status) > -1 --><div ng-if="['REGISTERED', 'FREE', 'PREMIUM'].indexOf($ctrl.status) &gt; -1" class="ng-scope">
+            <!-- ngIf: $ctrl.domainStatus['status'].rdomain_unicode && $ctrl.status != 'PREMIUM' && !($ctrl.status == 'REGISTERED' && !$ctrl.domainStatus['status'].transfer_allowed && !$ctrl.domainStatus['status'].trade_allowed) --><div class="row todo-tasks-item ng-scope" ng-if="$ctrl.domainStatus['status'].rdomain_unicode &amp;&amp; $ctrl.status != 'PREMIUM' &amp;&amp; !($ctrl.status == 'REGISTERED' &amp;&amp; !$ctrl.domainStatus['status'].transfer_allowed &amp;&amp; !$ctrl.domainStatus['status'].trade_allowed)">
+                <div ng-class="$ctrl.status == 'FREE' ? 'col-md-7 col-sm-6 col-xs-12' : 'col-md-5'" class="col-md-5">
+                    <span class="main-domain ng-binding">soome100.ee</span>
+                </div>
+                <!-- ngIf: $ctrl.status == 'REGISTERED' && $ctrl.domainStatus['status'].is_our && !$ctrl.domainStatus['status'].trade_allowed && $ctrl.domainStatus['status'].conf_trade_enabled -->
+                 <!-- ngIf: $ctrl.status == 'REGISTERED' && $ctrl.domainStatus['status'].is_our && !$ctrl.domainStatus['status'].conf_trade_enabled --><div class="col-md-7 ng-scope" ng-if="$ctrl.status == 'REGISTERED' &amp;&amp; $ctrl.domainStatus['status'].is_our &amp;&amp; !$ctrl.domainStatus['status'].conf_trade_enabled">
+                    <span>See domeen on registreeritud Zones. Palun kasuta omaniku vahetuseks <a href="https://www.zone.ee/et/zwebadmin/registrar/trade">vana vormi</a></span>
+                </div><!-- end ngIf: $ctrl.status == 'REGISTERED' && $ctrl.domainStatus['status'].is_our && !$ctrl.domainStatus['status'].conf_trade_enabled -->
+                <!-- ngIf: ($ctrl.domainStatus['status'].locks.length == 0 || ($ctrl.domainStatus['status'].locks.indexOf('clientTransferProhibited') == -1 && $ctrl.domainStatus['status'].locks.indexOf('serverTransferProhibited') == -1)) &&
+                !($ctrl.domainStatus['status'].is_our && (!$ctrl.domainStatus['status'].trade_allowed || !$ctrl.domainStatus['status'].conf_trade_enabled)) -->
+                <!-- ngIf: $ctrl.status == 'REGISTERED' && $ctrl.domainStatus['status'].locks.length > 0 && ($ctrl.domainStatus['status'].locks.indexOf('clientTransferProhibited') > -1 || $ctrl.domainStatus['status'].locks.indexOf('serverTransferProhibited') > -1) -->
+            </div><!-- end ngIf: $ctrl.domainStatus['status'].rdomain_unicode && $ctrl.status != 'PREMIUM' && !($ctrl.status == 'REGISTERED' && !$ctrl.domainStatus['status'].transfer_allowed && !$ctrl.domainStatus['status'].trade_allowed) -->
+
+            <!-- ngIf: $ctrl.status == 'PREMIUM' -->
+
+            <!-- ngIf: false && $ctrl.domainStatus['status'].tld_unicode == 'ee' && $ctrl.domainStatus['status'].is_registered && !$ctrl.domainStatus['status'].is_our -->
+
+            <!-- ngIf: $ctrl.status == 'REGISTERED' --><span ng-if="$ctrl.status == 'REGISTERED'" class="ng-scope">
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                            <a href="" ng-click="$ctrl.infoService.whoisModal($ctrl.adomain)">WHOIS andmed</a>
+                    </div>
+                </div>
+            </span><!-- end ngIf: $ctrl.status == 'REGISTERED' -->
+
+            <div class="divider"></div>
+            <!-- ngIf: $ctrl.order[$ctrl.adomain] -->
+            <div class="clearfix"></div>
+        </div><!-- end ngIf: ['REGISTERED', 'FREE', 'PREMIUM'].indexOf($ctrl.status) > -1 -->
+    </div>
+    <!-- ngIf: $ctrl.domainStatus['status'].campaign -->
+    <!-- ngIf: $ctrl.domainStatus['status'].disclaimer -->
+    <!-- ngIf: $ctrl.domainStatus['status'].idna_info -->
+</div></div></preview-domain>
+        <additional-domains autoload-count="5" preload="true" class="ng-isolate-scope"><div class="row margin-top-20 margin-bottom-20">
+    <div class="col-md-5" style="padding-top:10px;">
+        <span class="additional-domain-title"> Sind võib ühtlasi huvitada ka … </span>
+    </div>
+    <div class="col-md-7">
+        <span class="pull-right">
+            <div class="zonenupud">
+                <!-- ngRepeat: group in $ctrl.groups track by $index --><button class="btn ng-binding ng-scope def" ng-repeat="group in $ctrl.groups track by $index" ng-click="$ctrl.changeGroup($index)" ng-class="$ctrl.activeGroup == $index ? 'def' : 'default'">
+                    Populaarsed
+                </button><!-- end ngRepeat: group in $ctrl.groups track by $index --><button class="btn ng-binding ng-scope default" ng-repeat="group in $ctrl.groups track by $index" ng-click="$ctrl.changeGroup($index)" ng-class="$ctrl.activeGroup == $index ? 'def' : 'default'">
+                    Riigipõhised
+                </button><!-- end ngRepeat: group in $ctrl.groups track by $index --><button class="btn ng-binding ng-scope default" ng-repeat="group in $ctrl.groups track by $index" ng-click="$ctrl.changeGroup($index)" ng-class="$ctrl.activeGroup == $index ? 'def' : 'default'">
+                    Kõik
+                </button><!-- end ngRepeat: group in $ctrl.groups track by $index -->
+            </div>
+        </span>
+    </div>
+</div>
+
+<div class="portlet zoneportlet padding50">
+    <!-- ngIf: !$ctrl.groups || !$ctrl.rdomain -->
+
+    <!-- ngRepeat: tld in $ctrl.groups[$ctrl.activeGroup].tlds --><!-- ngIf: $ctrl.groups && $ctrl.rdomain --><div ng-repeat="tld in $ctrl.groups[$ctrl.activeGroup].tlds" ng-if="$ctrl.groups &amp;&amp; $ctrl.rdomain" class="ng-scope">
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) > -1 -->
+
+        <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status == 'ERROR' && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed --><span ng-if="$ctrl.loadingQueue.indexOf(tld) == -1 &amp;&amp; !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed" class="ng-scope">
+            <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld] && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid --><span ng-if="$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] &amp;&amp; $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid" class="ng-scope">
+                <!-- ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_registered && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium --><div class="row divider ng-scope" ng-if="!$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_registered &amp;&amp; !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium">
+                    <div class="col-md-9 col-sm-8 col-xs-12"><a href="#preview/soome100.eu" style="color:#000; font-weight:700; margin-top:5px; display:block;" class="ng-binding">soome100.eu</a></div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="input-group pull-right">
+                            <div class="ui-select-container ui-select-bootstrap dropdown ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" ng-class="{open: $select.open}" ng-model="$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].selectedPeriod" search-enabled="false" ng-change="$ctrl.changePeriod($ctrl.rdomain + '.' + tld)" ng-disabled="$ctrl.loading[$ctrl.rdomain + '.' + tld]"><div class="ui-select-match ng-scope" ng-hide="$select.open &amp;&amp; $select.searchEnabled" ng-disabled="$select.disabled" ng-class="{'btn-default-focus':$select.focus}"><span tabindex="-1" class="btn btn-default form-control ui-select-toggle" aria-label="Select box activate" ng-disabled="$select.disabled" ng-click="$select.activate()" style="outline: 0;"><span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted ng-binding ng-hide"></span> <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{'ui-select-allow-clear': $select.allowClear &amp;&amp; !$select.isEmpty()}" ng-transclude="">
+                                    <span class="ng-binding ng-scope">1 aasta</span><small class="fix muted text-muted ng-binding ng-scope" style="margin-left: 10px;">6.66 € + km</small>
+                                </span> <i class="caret pull-right" ng-click="$select.toggle($event)"></i> <a ng-show="$select.allowClear &amp;&amp; !$select.isEmpty() &amp;&amp; ($select.disabled !== true)" aria-label="Select box clear" style="margin-right: 10px" ng-click="$select.clear($event)" class="btn btn-xs btn-link pull-right ng-hide"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></a></span></div><span ng-show="$select.open &amp;&amp; $select.refreshing &amp;&amp; $select.spinnerEnabled" class="ui-select-refreshing glyphicon glyphicon-refresh ui-select-spin ng-hide"></span> <input type="search" autocomplete="off" tabindex="-1" aria-expanded="true" aria-label="Select box" aria-owns="ui-select-choices-1" class="form-control ui-select-search ng-pristine ng-untouched ng-valid ng-empty ng-hide ui-select-search-hidden" ng-class="{ 'ui-select-search-hidden' : !$select.searchEnabled }" placeholder="" ng-model="$select.search" ng-show="$select.open"><ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-scope ng-hide" ng-show="$select.open &amp;&amp; $select.items.length &gt; 0" repeat="item in ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].prices)"><li class="ui-select-choices-group" id="ui-select-choices-1"><div class="divider ng-hide" ng-show="$select.isGrouped &amp;&amp; $index &gt; 0"></div><div ng-show="$select.isGrouped" class="ui-select-choices-group-label dropdown-header ng-binding ng-hide" ng-bind="$group.name"></div><!-- ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --></li></ul><div class="ui-select-no-choice"></div><ui-select-single></ui-select-single><input ng-disabled="$select.disabled" class="ui-select-focusser ui-select-offscreen ng-scope" type="text" id="{{ $select.focusserId }}" aria-label="{{ $select.focusserTitle }}" aria-haspopup="true" role="button"></div>
+                            <span class="input-group-btn">
+                                <button ng-class="'btn btn-default ' + ($ctrl.order[$ctrl.rdomain + '.' + tld] ? 'default' : 'green') + ' toggle-domain-soome100.eu'" type="button" ng-click="$ctrl.toggleInCart($ctrl.rdomain + '.' + tld)" ng-disabled="$ctrl.loading[$ctrl.rdomain + '.' + tld]" class="btn btn-default green toggle-domain-soome100.eu">
+                                    <span ng-hide="$ctrl.loading[$ctrl.rdomain + '.' + tld]">
+                                        <i ng-class="'fa ' + ($ctrl.order[$ctrl.rdomain + '.' + tld] ? 'fa-minus' : 'fa-plus')" class="fa fa-plus"></i>
+                                        <span ng-hide="$ctrl.order[$ctrl.rdomain + '.' + tld]"> Lisa </span>
+                                    </span>
+                                    <span ng-show="$ctrl.loading[$ctrl.rdomain + '.' + tld]" class="ng-hide">
+                                        <i class="fa fa-spinner fa-spin"></i>
+                                    </span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].campaign -->
+                </div><!-- end ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_registered && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium -->
+
+                <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].is_registered && ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].locks || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].locks.length != 0) -->
+
+                <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium -->
+            </span><!-- end ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld] && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid -->
+
+            <!-- ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] -->
+        </span><!-- end ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed -->
+
+        <!-- ngIf: ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status === 'ERROR' || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid == false) && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+    </div><!-- end ngIf: $ctrl.groups && $ctrl.rdomain --><!-- end ngRepeat: tld in $ctrl.groups[$ctrl.activeGroup].tlds --><!-- ngIf: $ctrl.groups && $ctrl.rdomain --><div ng-repeat="tld in $ctrl.groups[$ctrl.activeGroup].tlds" ng-if="$ctrl.groups &amp;&amp; $ctrl.rdomain" class="ng-scope">
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) > -1 -->
+
+        <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status == 'ERROR' && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed --><span ng-if="$ctrl.loadingQueue.indexOf(tld) == -1 &amp;&amp; !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed" class="ng-scope">
+            <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld] && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid --><span ng-if="$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] &amp;&amp; $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid" class="ng-scope">
+                <!-- ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_registered && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium --><div class="row divider ng-scope" ng-if="!$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_registered &amp;&amp; !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium">
+                    <div class="col-md-9 col-sm-8 col-xs-12"><a href="#preview/soome100.fi" style="color:#000; font-weight:700; margin-top:5px; display:block;" class="ng-binding">soome100.fi</a></div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="input-group pull-right">
+                            <div class="ui-select-container ui-select-bootstrap dropdown ng-not-empty ng-valid" ng-class="{open: $select.open}" ng-model="$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].selectedPeriod" search-enabled="false" ng-change="$ctrl.changePeriod($ctrl.rdomain + '.' + tld)" ng-disabled="$ctrl.loading[$ctrl.rdomain + '.' + tld]"><div class="ui-select-match" ng-hide="$select.open &amp;&amp; $select.searchEnabled" ng-disabled="$select.disabled" ng-class="{'btn-default-focus':$select.focus}"><span tabindex="-1" class="btn btn-default form-control ui-select-toggle" aria-label="Select box activate" ng-disabled="$select.disabled" ng-click="$select.activate()" style="outline: 0;"><span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted ng-binding ng-hide"></span> <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{'ui-select-allow-clear': $select.allowClear &amp;&amp; !$select.isEmpty()}" ng-transclude="">
+                                    <span class="ng-binding ng-scope">1 aasta</span><small class="fix muted text-muted ng-binding ng-scope" style="margin-left: 10px;">13.50 € + km</small>
+                                </span> <i class="caret pull-right" ng-click="$select.toggle($event)"></i> <a ng-show="$select.allowClear &amp;&amp; !$select.isEmpty() &amp;&amp; ($select.disabled !== true)" aria-label="Select box clear" style="margin-right: 10px" ng-click="$select.clear($event)" class="btn btn-xs btn-link pull-right ng-hide"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></a></span></div><span ng-show="$select.open &amp;&amp; $select.refreshing &amp;&amp; $select.spinnerEnabled" class="ui-select-refreshing glyphicon glyphicon-refresh ui-select-spin ng-hide"></span> <input type="search" autocomplete="off" tabindex="-1" aria-expanded="true" aria-label="Select box" aria-owns="ui-select-choices-2" class="form-control ui-select-search ng-pristine ng-untouched ng-valid ng-empty ng-hide ui-select-search-hidden" ng-class="{ 'ui-select-search-hidden' : !$select.searchEnabled }" placeholder="" ng-model="$select.search" ng-show="$select.open"><ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-hide" ng-show="$select.open &amp;&amp; $select.items.length &gt; 0" repeat="item in ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].prices)"><li class="ui-select-choices-group" id="ui-select-choices-2"><div class="divider ng-hide" ng-show="$select.isGrouped &amp;&amp; $index &gt; 0"></div><div ng-show="$select.isGrouped" class="ui-select-choices-group-label dropdown-header ng-binding ng-hide" ng-bind="$group.name"></div><!-- ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --></li></ul><div class="ui-select-no-choice"></div><ui-select-single></ui-select-single><input ng-disabled="$select.disabled" class="ui-select-focusser ui-select-offscreen ng-scope" type="text" id="{{ $select.focusserId }}" aria-label="{{ $select.focusserTitle }}" aria-haspopup="true" role="button"></div>
+                            <span class="input-group-btn">
+                                <button ng-class="'btn btn-default ' + ($ctrl.order[$ctrl.rdomain + '.' + tld] ? 'default' : 'green') + ' toggle-domain-soome100.fi'" type="button" ng-click="$ctrl.toggleInCart($ctrl.rdomain + '.' + tld)" ng-disabled="$ctrl.loading[$ctrl.rdomain + '.' + tld]" class="btn btn-default green toggle-domain-soome100.fi">
+                                    <span ng-hide="$ctrl.loading[$ctrl.rdomain + '.' + tld]">
+                                        <i ng-class="'fa ' + ($ctrl.order[$ctrl.rdomain + '.' + tld] ? 'fa-minus' : 'fa-plus')" class="fa fa-plus"></i>
+                                        <span ng-hide="$ctrl.order[$ctrl.rdomain + '.' + tld]"> Lisa </span>
+                                    </span>
+                                    <span ng-show="$ctrl.loading[$ctrl.rdomain + '.' + tld]" class="ng-hide">
+                                        <i class="fa fa-spinner fa-spin"></i>
+                                    </span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].campaign -->
+                </div><!-- end ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_registered && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium -->
+
+                <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].is_registered && ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].locks || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].locks.length != 0) -->
+
+                <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium -->
+            </span><!-- end ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld] && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid -->
+
+            <!-- ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] -->
+        </span><!-- end ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed -->
+
+        <!-- ngIf: ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status === 'ERROR' || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid == false) && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+    </div><!-- end ngIf: $ctrl.groups && $ctrl.rdomain --><!-- end ngRepeat: tld in $ctrl.groups[$ctrl.activeGroup].tlds --><!-- ngIf: $ctrl.groups && $ctrl.rdomain --><div ng-repeat="tld in $ctrl.groups[$ctrl.activeGroup].tlds" ng-if="$ctrl.groups &amp;&amp; $ctrl.rdomain" class="ng-scope">
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) > -1 -->
+
+        <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status == 'ERROR' && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed --><span ng-if="$ctrl.loadingQueue.indexOf(tld) == -1 &amp;&amp; !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed" class="ng-scope">
+            <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld] && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid --><span ng-if="$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] &amp;&amp; $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid" class="ng-scope">
+                <!-- ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_registered && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium --><div class="row divider ng-scope" ng-if="!$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_registered &amp;&amp; !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium">
+                    <div class="col-md-9 col-sm-8 col-xs-12"><a href="#preview/soome100.lt" style="color:#000; font-weight:700; margin-top:5px; display:block;" class="ng-binding">soome100.lt</a></div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="input-group pull-right">
+                            <div class="ui-select-container ui-select-bootstrap dropdown ng-not-empty ng-valid" ng-class="{open: $select.open}" ng-model="$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].selectedPeriod" search-enabled="false" ng-change="$ctrl.changePeriod($ctrl.rdomain + '.' + tld)" ng-disabled="$ctrl.loading[$ctrl.rdomain + '.' + tld]"><div class="ui-select-match" ng-hide="$select.open &amp;&amp; $select.searchEnabled" ng-disabled="$select.disabled" ng-class="{'btn-default-focus':$select.focus}"><span tabindex="-1" class="btn btn-default form-control ui-select-toggle" aria-label="Select box activate" ng-disabled="$select.disabled" ng-click="$select.activate()" style="outline: 0;"><span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted ng-binding ng-hide"></span> <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{'ui-select-allow-clear': $select.allowClear &amp;&amp; !$select.isEmpty()}" ng-transclude="">
+                                    <span class="ng-binding ng-scope">1 aasta</span><small class="fix muted text-muted ng-binding ng-scope" style="margin-left: 10px;">9.90 € + km</small>
+                                </span> <i class="caret pull-right" ng-click="$select.toggle($event)"></i> <a ng-show="$select.allowClear &amp;&amp; !$select.isEmpty() &amp;&amp; ($select.disabled !== true)" aria-label="Select box clear" style="margin-right: 10px" ng-click="$select.clear($event)" class="btn btn-xs btn-link pull-right ng-hide"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></a></span></div><span ng-show="$select.open &amp;&amp; $select.refreshing &amp;&amp; $select.spinnerEnabled" class="ui-select-refreshing glyphicon glyphicon-refresh ui-select-spin ng-hide"></span> <input type="search" autocomplete="off" tabindex="-1" aria-expanded="true" aria-label="Select box" aria-owns="ui-select-choices-3" class="form-control ui-select-search ng-pristine ng-untouched ng-valid ng-empty ng-hide ui-select-search-hidden" ng-class="{ 'ui-select-search-hidden' : !$select.searchEnabled }" placeholder="" ng-model="$select.search" ng-show="$select.open"><ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-hide" ng-show="$select.open &amp;&amp; $select.items.length &gt; 0" repeat="item in ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].prices)"><li class="ui-select-choices-group" id="ui-select-choices-3"><div class="divider ng-hide" ng-show="$select.isGrouped &amp;&amp; $index &gt; 0"></div><div ng-show="$select.isGrouped" class="ui-select-choices-group-label dropdown-header ng-binding ng-hide" ng-bind="$group.name"></div><!-- ngRepeat: item in $select.items --><!-- ngIf: $select.open --><!-- end ngRepeat: item in $select.items --></li></ul><div class="ui-select-no-choice"></div><ui-select-single></ui-select-single><input ng-disabled="$select.disabled" class="ui-select-focusser ui-select-offscreen ng-scope" type="text" id="{{ $select.focusserId }}" aria-label="{{ $select.focusserTitle }}" aria-haspopup="true" role="button"></div>
+                            <span class="input-group-btn">
+                                <button ng-class="'btn btn-default ' + ($ctrl.order[$ctrl.rdomain + '.' + tld] ? 'default' : 'green') + ' toggle-domain-soome100.lt'" type="button" ng-click="$ctrl.toggleInCart($ctrl.rdomain + '.' + tld)" ng-disabled="$ctrl.loading[$ctrl.rdomain + '.' + tld]" class="btn btn-default green toggle-domain-soome100.lt">
+                                    <span ng-hide="$ctrl.loading[$ctrl.rdomain + '.' + tld]">
+                                        <i ng-class="'fa ' + ($ctrl.order[$ctrl.rdomain + '.' + tld] ? 'fa-minus' : 'fa-plus')" class="fa fa-plus"></i>
+                                        <span ng-hide="$ctrl.order[$ctrl.rdomain + '.' + tld]"> Lisa </span>
+                                    </span>
+                                    <span ng-show="$ctrl.loading[$ctrl.rdomain + '.' + tld]" class="ng-hide">
+                                        <i class="fa fa-spinner fa-spin"></i>
+                                    </span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].campaign -->
+                </div><!-- end ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_registered && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium -->
+
+                <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].is_registered && ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].locks || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].locks.length != 0) -->
+
+                <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.is_premium -->
+            </span><!-- end ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld] && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid -->
+
+            <!-- ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] -->
+        </span><!-- end ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed -->
+
+        <!-- ngIf: ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status === 'ERROR' || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid == false) && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+    </div><!-- end ngIf: $ctrl.groups && $ctrl.rdomain --><!-- end ngRepeat: tld in $ctrl.groups[$ctrl.activeGroup].tlds --><!-- ngIf: $ctrl.groups && $ctrl.rdomain --><div ng-repeat="tld in $ctrl.groups[$ctrl.activeGroup].tlds" ng-if="$ctrl.groups &amp;&amp; $ctrl.rdomain" class="ng-scope">
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) > -1 --><div class="row divider ng-scope" ng-if="$ctrl.loadingQueue.indexOf(tld) &gt; -1">
+            <div class="col-md-6">
+                <a href="#preview/soome100.lv" style="color:#000; font-weight:700; margin-top:5px; display:block;" class="ng-binding">soome100.lv</a></div>
+            <div class="col-md-6 text-right">
+                <button class="btn default" type="button">
+                    <span><i class="fa fa-spinner fa-spin"></i></span>
+                </button>
+            </div>
+        </div><!-- end ngIf: $ctrl.loadingQueue.indexOf(tld) > -1 -->
+
+        <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status == 'ERROR' && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed -->
+
+        <!-- ngIf: ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status === 'ERROR' || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid == false) && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+    </div><!-- end ngIf: $ctrl.groups && $ctrl.rdomain --><!-- end ngRepeat: tld in $ctrl.groups[$ctrl.activeGroup].tlds --><!-- ngIf: $ctrl.groups && $ctrl.rdomain --><div ng-repeat="tld in $ctrl.groups[$ctrl.activeGroup].tlds" ng-if="$ctrl.groups &amp;&amp; $ctrl.rdomain" class="ng-scope">
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) > -1 --><div class="row divider ng-scope" ng-if="$ctrl.loadingQueue.indexOf(tld) &gt; -1">
+            <div class="col-md-6">
+                <a href="#preview/soome100.com" style="color:#000; font-weight:700; margin-top:5px; display:block;" class="ng-binding">soome100.com</a></div>
+            <div class="col-md-6 text-right">
+                <button class="btn default" type="button">
+                    <span><i class="fa fa-spinner fa-spin"></i></span>
+                </button>
+            </div>
+        </div><!-- end ngIf: $ctrl.loadingQueue.indexOf(tld) > -1 -->
+
+        <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status == 'ERROR' && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed -->
+
+        <!-- ngIf: ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status === 'ERROR' || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid == false) && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+    </div><!-- end ngIf: $ctrl.groups && $ctrl.rdomain --><!-- end ngRepeat: tld in $ctrl.groups[$ctrl.activeGroup].tlds --><!-- ngIf: $ctrl.groups && $ctrl.rdomain --><div ng-repeat="tld in $ctrl.groups[$ctrl.activeGroup].tlds" ng-if="$ctrl.groups &amp;&amp; $ctrl.rdomain" class="ng-scope">
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) > -1 -->
+
+        <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status == 'ERROR' && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed --><span ng-if="$ctrl.loadingQueue.indexOf(tld) == -1 &amp;&amp; !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed" class="ng-scope">
+            <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld] && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid -->
+
+            <!-- ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] --><div class="row divider ng-scope" ng-if="!$ctrl.domainStatus[$ctrl.rdomain + '.' + tld]">
+                <div class="col-md-6">
+                    <a href="#preview/soome100.net" style="color:#000; font-weight:700; margin-top:5px; display:block;" class="ng-binding">soome100.net</a>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button class="btn pull-right" ng-click="$ctrl.addToQueue(tld)">kontrolli saadavust</button>
+                </div>
+                <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].campaign -->
+            </div><!-- end ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] -->
+        </span><!-- end ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed -->
+
+        <!-- ngIf: ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status === 'ERROR' || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid == false) && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+    </div><!-- end ngIf: $ctrl.groups && $ctrl.rdomain --><!-- end ngRepeat: tld in $ctrl.groups[$ctrl.activeGroup].tlds --><!-- ngIf: $ctrl.groups && $ctrl.rdomain --><div ng-repeat="tld in $ctrl.groups[$ctrl.activeGroup].tlds" ng-if="$ctrl.groups &amp;&amp; $ctrl.rdomain" class="ng-scope">
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) > -1 -->
+
+        <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status == 'ERROR' && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed --><span ng-if="$ctrl.loadingQueue.indexOf(tld) == -1 &amp;&amp; !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed" class="ng-scope">
+            <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld] && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid -->
+
+            <!-- ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] --><div class="row divider ng-scope" ng-if="!$ctrl.domainStatus[$ctrl.rdomain + '.' + tld]">
+                <div class="col-md-6">
+                    <a href="#preview/soome100.org" style="color:#000; font-weight:700; margin-top:5px; display:block;" class="ng-binding">soome100.org</a>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button class="btn pull-right" ng-click="$ctrl.addToQueue(tld)">kontrolli saadavust</button>
+                </div>
+                <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].campaign -->
+            </div><!-- end ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] -->
+        </span><!-- end ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed -->
+
+        <!-- ngIf: ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status === 'ERROR' || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid == false) && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+    </div><!-- end ngIf: $ctrl.groups && $ctrl.rdomain --><!-- end ngRepeat: tld in $ctrl.groups[$ctrl.activeGroup].tlds --><!-- ngIf: $ctrl.groups && $ctrl.rdomain --><div ng-repeat="tld in $ctrl.groups[$ctrl.activeGroup].tlds" ng-if="$ctrl.groups &amp;&amp; $ctrl.rdomain" class="ng-scope">
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) > -1 -->
+
+        <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status == 'ERROR' && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+
+        <!-- ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed --><span ng-if="$ctrl.loadingQueue.indexOf(tld) == -1 &amp;&amp; !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed" class="ng-scope">
+            <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld] && $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid -->
+
+            <!-- ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] --><div class="row divider ng-scope" ng-if="!$ctrl.domainStatus[$ctrl.rdomain + '.' + tld]">
+                <div class="col-md-6">
+                    <a href="#preview/soome100.info" style="color:#000; font-weight:700; margin-top:5px; display:block;" class="ng-binding">soome100.info</a>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button class="btn pull-right" ng-click="$ctrl.addToQueue(tld)">kontrolli saadavust</button>
+                </div>
+                <!-- ngIf: $ctrl.domainStatus[$ctrl.rdomain + '.' + tld]['status'].campaign -->
+            </div><!-- end ngIf: !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld] -->
+        </span><!-- end ngIf: $ctrl.loadingQueue.indexOf(tld) == -1 && !$ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed -->
+
+        <!-- ngIf: ($ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.parsed.status === 'ERROR' || $ctrl.domainStatus[$ctrl.rdomain + '.' + tld].status.valid == false) && $ctrl.loadingQueue.indexOf(tld) == -1 -->
+    </div><!-- end ngIf: $ctrl.groups && $ctrl.rdomain --><!-- end ngRepeat: tld in $ctrl.groups[$ctrl.activeGroup].tlds -->
+</div>
+</additional-domains></div>
+    <div class="col-md-3">
+        <cart view="preview" class="ng-isolate-scope"><h2 class="weight700 margin-bottom-40">
+    <i class="fa fa-shopping-cart"></i>
+ 	Tellimus
+
+    <!-- ngIf: $ctrl.domainsInCart -->
+</h2>
+
+<div ng-hide="$ctrl.domainsInCart">
+    <div class="text-center">Ostukorv on tühi</div>
+</div>
+
+<!-- ngIf: $ctrl.domainsInCart --></cart>
+    </div>
+</div></ng-view>
+
+    </div>
+
+
+                    <div class="modal fade" id="ZLargeModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="defaultZoneModal" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+        </div>
+    </div>
+</div>  
+
+<div class="modal fade" id="wideZoneModal" tabindex="-1" role="dialog" aria-labelledby="wideZoneModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+        </div>
+    </div>
+</div>  
+
+
+<!--loader-->
+<div class="dim" id="zone-visual-loader" style="display: none;">
+    <div class="diminfo"><i class="fa fa-spinner fa-spin fa-4x"></i>
+        <h2>Laadin, palun oota</h2>
+    </div>
+</div>
+
+<!--notice, warning, error-->
+<div class="dim" id="zone-visual-notice" style="display: none;">
+    <div class="diminfo">
+        <i id="zone-visual-notice-sign" class="fa fa-4x"></i>
+        <h2 id="zone-visual-notice-text">...</h2>
+        <div class="margin-bottom-40"></div>
+        <a id="zone-visual-notice-cancel" href="#" style="display: none;" class="btn btn-lg red"> Katkesta </a>
+        
+        <a id="zone-visual-notice-close" href="#" class="btn btn-lg"> OK </a>
+    </div>
+</div>
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+        <!-- END CONTAINER -->
+
+        <script src="/assets/polyfills.js?id=0c3398e8fd1ebc7ae10f"></script>
+
+<script>
+var ZoneJS = {"Conf":{"ajaxUrl":"https:\/\/www.zone.ee\/et\/","lang":"et","domainOrder":"https:\/\/www.zone.ee\/et\/domeeni-otsing","IP":"82.147.184.63","vatRate":20,"authUrl":"https:\/\/www.zone.ee\/et\/zid\/server\/auth?ZID_CPROXY=https%3A%2F%2Fwww.zone.ee%2Fet%2Fzid%2Fconsumer&ZID_SIG=Vi47NqN%2BxLYmaur7mR4TcRZrlDJ4NpswPbg6YOZsFy%2BAAAc7G%2BnaFKWRqNwqnam4%2F6kuE%2BWEc%2FAcJ%2FxlSffQslfyPpKKVM80pnrru1Td829lv5kzXAOexVRG%2FmJeqbIWS16yvMZn6XWWXTx2eOkG%2FrtBQShRAYYkgDhZo%2B3FY3c%3D&ZID_CONTINUE=https%3A%2F%2Fwww.zone.ee%2Fet%2Fdomeeni-otsing","registerUrl":"https:\/\/www.zone.ee\/et\/zid\/server\/register?ZID_CPROXY=https%3A%2F%2Fwww.zone.ee%2Fet%2Fzid%2Fconsumer&ZID_SPAGE=register&ZID_SIG=Vi47NqN%2BxLYmaur7mR4TcRZrlDJ4NpswPbg6YOZsFy%2BAAAc7G%2BnaFKWRqNwqnam4%2F6kuE%2BWEc%2FAcJ%2FxlSffQslfyPpKKVM80pnrru1Td829lv5kzXAOexVRG%2FmJeqbIWS16yvMZn6XWWXTx2eOkG%2FrtBQShRAYYkgDhZo%2B3FY3c%3D&ZID_CONTINUE=https%3A%2F%2Fwww.zone.ee%2Fet%2Fdomeeni-otsing"}}; 
+</script>
+
+
+<script>
+var defaultTableConf = {
+    "bAutoWidth": false,
+    "oLanguage": {
+        "sEmptyTable": "Teenuseid ei leitud",
+        "sSearch": "Filtreeri",
+        "sZeroRecords": "Otsingule ei leitud vasteid",
+        "sLengthMenu": "Kirjeid lehek\u00fcljel",
+        "sInfo": "N\u00e4itan ridu _START_ kuni _END_ . Ridu kokku _TOTAL_.",
+        "sInfoEmpty": "N\u00e4itan ridu 0 kuni 0. Ridu kokku 0.",
+        "sInfoFiltered": "",
+        "oPaginate": {
+            "sFirst": "Esimene",
+            "sLast": "Viimane",
+            "sNext": "J\u00e4rgmine",
+            "sPrevious": "Eelmine"
+        }
+    },
+    "stateSave": true,
+    "stateDuration": 2592000,
+    "aLengthMenu": [
+        [
+            5,
+            10,
+            25,
+            50,
+            -1
+        ],
+        [
+            5,
+            10,
+            25,
+            50,
+            "K\u00f5ik"
+        ]
+    ],
+    "iDisplayLength": 10
+};
+</script>
+
+
+
+<script src="https://www.zone.ee/theme/assets/global/plugins/jquery.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/jquery-migrate.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/js.cookie.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/jquery.blockui.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/uniform/jquery.uniform.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/bootstrap-confirmation/bootstrap-confirmation.min.js"></script>
+
+
+
+<script src="https://www.zone.ee/theme/assets/global/scripts/datatable.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/datatables/datatables.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js"></script>
+<script src="https://www.zone.ee/assets/zone-scripts.js?id=d750a55ccb600127e9d2"></script>
+
+
+
+<script src="https://www.zone.ee/theme/assets/global/scripts/app.js"></script>
+<script src="https://www.zone.ee/theme/assets/layouts/layout/scripts/layout.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/layouts/global/scripts/quick-sidebar.min.js"></script>
+
+
+
+
+
+
+<script src="https://www.zone.ee/assets/gettext.js?id=a97f700ca7f18c65d877"></script>
+
+
+<script src="https://www.zone.ee/assets/domainorder-app.js?id=3f584a79b1f87a6de503"></script>
+
+
+
+
+<!--[if lt IE 9]>
+<script src="https://www.zone.ee/theme/assets/global/plugins/respond.min.js"></script>
+<script src="https://www.zone.ee/theme/assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+
+<script>
+$(document).ready(function() {
+    $.ajaxSetup({
+        headers: {
+            'X-ZToken': $('body').data('zcsrf'), //legacy
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    if (typeof App != 'undefined') {
+        App.init(); // init layout
+    }
+
+    
+});
+</script>
+
+
+
+    <!-- END JAVASCRIPTS -->
+    
+<!-- END BODY -->
+
+
+<script type="text/javascript" id="">var ua=navigator.userAgent.toLowerCase(),platform=navigator.platform.toLowerCase();platformName=ua.match(/ip(?:ad|od|hone)/)?"ios":(ua.match(/(?:webos|android)/)||platform.match(/mac|win|linux/)||["other"])[0];isMobile=/ios|android|webos/.test(platformName);
+isMobile||(window.$zopim||function(a,c){var b=$zopim=function(a){b._.push(a)},d=b.s=a.createElement(c),e=a.getElementsByTagName(c)[0];b.set=function(a){b.set._.push(a)};b._=[];b.set._=[];d.async=!0;d.setAttribute("charset","utf-8");d.src="//v2.zopim.com/?3bZ6osF4bRgBdlcQAGYfLvlPc24seTeA";b.t=+new Date;d.type="text/javascript";e.parentNode.insertBefore(d,e)}(document,"script"),$zopim(function(){$zopim.livechat.mobileNotifications.setDisabled(!0);var a="";try{var c=window.google_tag_manager[google_tag_manager["GTM-K8W4S8"].macro(4)].dataLayer;
+a=c.get("zoneid");c.get("age");c.get("domains");c.get("servers")}catch(b){console.log(b)}""!==a&&"undefined"!=typeof a&&($zopim.livechat.setName(a),$zopim.livechat.addTags("zid-"+a))}));</script><script type="text/javascript" id="">(function(){var d=(new Date).getTime(),a=0,h=0,b=!0,g=!1,k=function(){h=(new Date).getTime();a+=h-d;b=!0},e=function(a){b&&(b=!1,d=(new Date).getTime(),g=!1);window.clearTimeout(l);l=window.setTimeout(k,5E3)},c=function(a,b){window.addEventListener?window.addEventListener(a,b):window.attachEvent&&window.attachEvent("on"+a,b)},f=function(c){b||(a+=(new Date).getTime()-d);!g&&0<a&&36E5>a&&window.dataLayer.push({event:"nonIdle",nonIdleTimeElapsed:a});b&&(g=!0);c&&"beforeunload"===c.type&&window.removeEventListener("beforeunload",
+f);a=0;d=(new Date).getTime();window.setTimeout(f,15E3)};c("mousedown",e);c("keydown",e);c("scroll",e);c("mousemove",e);c("beforeunload",f);var l=window.setTimeout(k,5E3);window.setTimeout(f,15E3)})();</script><script type="text/javascript" id="">(function(){function a(){++b;2==b&&(c=!0);d()}function g(){e=!0;d()}function d(){c&&e&&!f&&(f=!0,dataLayer.push({event:"GAEvent",eventCategory:"NoBounce",eventAction:"Time spent and page scrolled",nonInteraction:!0}))}var e=!1,c=!1,f=!1,b=0;setTimeout(g,3E4);window.addEventListener?window.addEventListener("scroll",a,!1):window.attachEvent("onScroll",a)})();</script><div class="zopim" __jx__id="___$_1" style="position: absolute; visibility: hidden; margin: 0px; padding: 0px; border: 0px; height: 0px; width: 0px;"></div></body></html>
